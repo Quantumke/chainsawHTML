@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="css/main.css">
 <script src="js/jquery.min.js"></script>
 <script src="js/modernizr.js"></script>
+<link rel="stylesheet" href="css/animate.css">
+<script src="js/wow.js"></script>
 
 
 <script>
@@ -98,7 +100,19 @@ jQuery(document).ready(function ($) {
 
  </div></div></div>
 
+<script>
+     wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
 
+</script>
  <script async data-require="false" data-main="https://caferati-two-caferati.netdna-ssl.com/scripts/build-59" src="js/require.js"></script>
 
  // <script>var SRT={};SRT.o=Date.now(),SRT.a=setTimeout(function(){SRT.r=document.getElementById("page-loader"),SRT.r=SRT.r.querySelectorAll(".avatar"),SRT.r[0].classList.add("active")},1e3),SRT.f=setTimeout(function(){SRT.s=Date.now(),SRT.d=9900,SRT.r[0].classList.add("first")},9900),SRT.s=setTimeout(function(){SRT.s=Date.now(),SRT.d=1350,SRT.r[0].classList.contains("first")&&SRT.r[0].classList.add("second")},3250),SRT.t=setTimeout(function(){SRT.s=Date.now(),SRT.d=1350,SRT.r[0].classList.contains("second")&&SRT.r[0].classList.add("third")},4550);var DATA={scripts:[""],partials:["control"],filter:{list:[]},prev:{},next:{},template:"about",index:1,name:"about"};</script>
