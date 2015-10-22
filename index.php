@@ -34,7 +34,7 @@ jQuery(document).ready(function ($) {
     function goportofolio()
 	{
 
-		window.location.href="work.html";
+		window.location.href="work.php";
 	}
 </script>
 
@@ -48,12 +48,11 @@ jQuery(document).ready(function ($) {
 
 
 <header id="page-header" class="hidden" data-title="Benson Mburu  | Full Stack  Developer">
-<nav><a href="index.html">
-<span>about</span></a>
-<a href="work.html"><span>work</span></a>
- <a href="labs.html"><span>labs</span></a> <a href="contact.html">
-
- <span>contact</span></a>
+<nav>
+<a href="index.html"><span onclick="gohome()">about</span></a>
+<a href="work.html"><span onclick="goportofolio()">work</span></a>
+ <a href="labs.html"><span onclick="golabs">labs</span></a>
+ <a href="contact.html"><span onclick="gocontact">contact</span></a>
  </nav>
  <div class="burger"><i></i> <i></i> <i></i></div></header>
  <main id="page-content">
@@ -84,7 +83,7 @@ jQuery(document).ready(function ($) {
  <div class="game">
  <div class="destroy">
 
- <awesome-button id="destroy-button" width="242" progress="true" size="large" success="All set!">Continue</awesome-button>
+ <awesome-button onclick="goportofolio()" id="destroy-button"  width="242" progress="true"  size="large" success="All set!">Continue</awesome-button>
  </div>
  </div>
  </div>
