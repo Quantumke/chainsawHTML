@@ -243,3 +243,12 @@ ul{
 	left: 100%;
 	top: 0%;
 }
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+circle {
+  fill: none;
+  stroke-width: 2.5px;
+}
