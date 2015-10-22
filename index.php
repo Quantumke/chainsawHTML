@@ -31,14 +31,10 @@ jQuery(document).ready(function ($) {
 
     });
 });
-    function goportofolio()
-	{
 
-		window.location.href="work.php";
-	}
 </script>
 
-
+<script src="js/custom.js"></script>
 
 <link async rel="import" href="build1896.html?v=59"/>
 // <script>var wrap=null;document.head.createShadowRoot||document.write("<script src='js/webcomponents.min.js'><\/script>"),function(e,t,a,n,c,s,o){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,s=t.createElement(a),o=t.getElementsByTagName(a)[0],s.async=1,s.src=n,o.parentNode.insertBefore(s,o)}(window,document,"script","../www.-analytics.com/analytics.js","ga"),ga("create","UA-51484092-1","auto"),ga("require","displayfeatures"),ga("send","pageview");</script>
@@ -53,6 +49,7 @@ jQuery(document).ready(function ($) {
 <a href="work.html"><span onclick="goportofolio()">work</span></a>
  <a href="labs.html"><span onclick="golabs">labs</span></a>
  <a href="contact.html"><span onclick="gocontact">contact</span></a>
+<
  </nav>
  <div class="burger"><i></i> <i></i> <i></i></div></header>
  <main id="page-content">
