@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Uniquee Real Estates</title>
+		<meta name="description" content="Four Boxes Slideshow: Recreating the background image slideshow seen on Atelier Serge Thoroval's website" />
+		<meta name="keywords" content="background slideshow, boxes, background image, four panels, css, tutorial" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/materialize.css">
+		<link rel="stylesheet" href="css/overlay.css"><nav class="cl-effect-19">
+					<a href="#"><span data-hover="Ratatouille">Ratatouille</span></a>
+					<a href="#"><span data-hover="Lassitude">Lassitude</span></a>
+					<a href="#"><span data-hover="Murmurous">Murmurous</span></a>
+					<a href="#"><span data-hover="Palimpsest">Palimpsest</span></a>
+					<a href="#"><span data-hover="Assemblage">Assemblage</span></a>
+				</nav>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="js/materialize.js" type="text/javascript"></script>
+		<script src="js/Overlay.js" type="text/javascript"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<link rel="stylesheet" href="css/xcomponent.css">
+<script>
+
+//	$(window).load(function() {
+//		// Animate loader off screen
+//		$(".se-pre-con").fadeOut("slow");;
+//	});
+//
+
+
+jQuery(document).ready(function ($) {
+    $(window).load(function () {
+        setTimeout(function(){
+            $('.se-pre-con').fadeOut('slow', function () {
+            });
+        },200000);
+
+    });
+});
+</script>
+
+
+
+	</head>
+	<body>
+	<div class="se-pre-con"></div>
+
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+
+				<span class="right"><nav class="cl-effect-19">
+					<a href="#"><span data-hover="ABOUT">About</span></a>
+					<a href="#"><span data-hover="HOMES">Homes</span></a>
+                    <a href="#"><span data-hover="HOTELS">Offices</span></a>
+				  <a href="#"><span data-hover="HOTELS">Hotels</span></a>
+					<a href="#"><span data-hover="CONTACT">Contact Us</span></a>
+				</nav></span>
+			</div>
+			<div id="boxgallery" class="boxgallery" data-effect="effect-3">
+				<div class="panel"><img id="bg" src="img/2.jpg" alt="Image 2"/></div>
+				<div class="panel"><img id="bg" src="img/3.jpg" alt="Image 3"/></div>
+				<div class="panel"><img id="bg" src="img/1.jpg" alt="Image 1"/></div>
+				<div class="panel"><img id="bg" src="img/4.jpg" alt="Image 4"/></div>
+			</div>
+			<header class="codrops-header">
+				<h1>Unique Property Managers <span>Remodelling housing agencies through technology</span></h1>
+				<nav class="codrops-demos" data-overlay-page-wrap>
+					<a id="overlayTrigger2" href="myOverlay2"  data-overlay-trigger>Find Property</a>
+					<a href="">Offer Property</a>
+					<a class="" href="index3.html">New Listings</a>
+
+				</nav>
+			</header>
+		</div><!-- /container -->
+
+
+
+
+
+		<div style="display:none;">
+
+
+
+			<div id="myOverlay2" aria-labelledby="myOverlay2Heading" data-overlay-container-class="slide-down">
+				<h1 id="myOverlay2Heading">TEST CONTENT 2</h1>
+			</div>
+
+		</div>
+
+
+
+
+
+        <!-- Include Overlay.js -->
+		<script type="text/javascript" src="js/Overlay.js"></script>
+
+
+		<script src="js/classie.js"></script>
+		<script src="js/boxesFx.js"></script>
+		<script>
+			new BoxesFx( document.getElementById( 'boxgallery' ) );
+		</script>
+	</body>
+</html>
