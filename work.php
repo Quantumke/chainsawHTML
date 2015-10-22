@@ -1,3 +1,6 @@
+<?php error_reporting(E_ALL);
+include 'conn.php'
+?>
 <!doctype html><html>
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -19,7 +22,8 @@
 
 </head>
 <body class="page-exit animating">
-<header id="page-header" class="hidden" data-title="Web Projects | Rafael Caferati">
+
+<header id="page-header" class="hidden" data-title="Portfolio | Benson Mburu">
 <nav>
 <a href="index.html">
 <span>about</span></a>
@@ -55,34 +59,46 @@
  <small>Click On a Tab To Sort By Technology .</small>
  </div>
  </header>
+
+<?php
+
+$sql = "SELECT * from portfolio";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+
+   ?>
+
  <ul class="grid-list cf_">
 
  <li class="item l_">
- <h2>All BLacks</h2>
- <a href="work/whygowild.html" class="screen">
- <span data-text="All Blacks">
+ <h2><?php echo $row["title"] ?></h2>
+ <a href="#" class="screen">
+ <span data-text="<?php echo $row["title"] ?>">
  <i></i> <i></i> <i></i>
  </span>
- <div class="thumb" style="background-image:url(img/Ecommerce_Template.png)">
+ <div class="thumb" style="background-image:url(img/<?php echo $row["img"] ?>)">
  <div class="tags">
  <div>
  <ul>
- <li class="hidden">WEBSITE</li>
- <li class="hidden">HTML5</li>
- <li class="hidden">CSS3</li>
-  <li class="hidden">Laravel</li>
- <li>UI/UX</li>
+     <li><?php echo $row["technology"]?></li>
  <i class="fa fa-github"></i>
  <
  </ul>
  </div></div>
 
- <div style="background-image:url(img/Ecommerce_Template.png)" class="imgs"></div></div>
+ <div style="background-image:url(img/<?php echo $row["img"] ?>)" class="imgs"></div></div>
 
  <em class="fwa hidden">FWA Winner</em></a></li>
-
-
-
+ <?php
+ }
+} else {
+    echo "0 results";
+}
+$conn->close();
+?>
 
 
 
@@ -96,42 +112,7 @@
   </div>
 
   </div></div>
-  <script>
 
-var width = Math.max(1350, innerWidth),
-    height = Math.max(650, innerHeight);
-
-var i = 0;
-
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
-
-svg.append("rect")
-    .attr("width", width)
-    .attr("height", height)
-    .on("ontouchstart" in document ? "touchmove" : "mousemove", particle);
-
-function particle() {
-  var m = d3.mouse(this);
-
-  svg.insert("circle", "rect")
-      .attr("cx", m[0])
-      .attr("cy", m[1])
-      .attr("r", 1e-6)
-      .style("stroke", d3.hsl((i = (i + 1) % 360), 1, .5))
-      .style("stroke-opacity", 1)
-    .transition()
-      .duration(2000)
-      .ease(Math.sqrt)
-      .attr("r", 100)
-      .style("stroke-opacity", 1e-6)
-      .remove();
-
-  d3.event.preventDefault();
-}
-
-</script>
    <script async data-require="false" data-main="https://caferati-two-caferati.netdna-ssl.com/scripts/build-59" src="js/require.js">
     </script>
  <script>var SRT={};SRT.o=Date.now(),SRT.a=setTimeout(function(){SRT.r=document.getElementById("page-loader"),SRT.r=SRT.r.querySelectorAll(".avatar"),SRT.r[0].classList.add("active")},1e3),SRT.f=setTimeout(function(){SRT.s=Date.now(),SRT.d=900,SRT.r[0].classList.add("first")},1900),SRT.s=setTimeout(function(){SRT.s=Date.now(),SRT.d=1350,SRT.r[0].classList.contains("first")&&SRT.r[0].classList.add("second")},3250),SRT.t=setTimeout(function(){SRT.s=Date.now(),SRT.d=1350,SRT.r[0].classList.contains("second")&&SRT.r[0].classList.add("third")},4550);var DATA={scripts:[""],partials:["control"],filter:{list:["WEB COMPONENTS","HTML5","SASS","LESS","SVG","REQUIREJS","BACKBONEJS","METEORJS","COFFEESCRIPT","SOCKETIO","MONGODB","PHP","MYSQL","UX DESIGN","UI/UX ANIMATIONS","GAME DESIGN","WEBSITE","WEBAPP"],name:"filter by skill"},prev:{link:"/",name:"About"},next:{link:"/labs",name:"Labs"},template:"list",index:2,name:"work"};</script></body>
