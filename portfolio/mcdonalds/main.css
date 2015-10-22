@@ -1,0 +1,110 @@
+
+#bg{
+width: 100%;
+
+filter: brightness(30%);
+-webkit-filter: brightness(30%);
+-moz-filter: brightness(30%);
+-o-filter: brightness(30%);
+-ms-filter: brightness(30%);
+}
+#content{
+    position: absolute;
+    top: 0px;
+    left: 120px;
+    padding: 0px;
+    color: white;
+  
+    font-size: 70px;
+}
+
+
+
+
+#header-container{
+    height: 685.5px;
+    overflow: hidden;
+
+}
+.logo{
+position: absolute;
+    top: 50px;
+   left: 1000px;
+
+}
+.menu-items{
+position: absolute;
+    color: white;
+    font-size: small;
+    left: 50%;
+    top: 10px;
+    
+
+}
+
+.links{
+position: absolute;
+    left: 10px;
+
+}
+.solgan{
+    position: absolute;
+    top: -200px;
+    left: 10%;
+    
+    height: 200px;
+    width:1000px;
+    color: #ED1C2F;
+
+}
+.btn-1{
+border: 2px solid #ED1C2F;
+    width: 170px;
+    height: 50px;
+    position: absolute;
+    top: 400px;
+    left: 120px;
+    font-size:25px;
+    padding-left: 50px;
+    padding-top: 10px;
+
+
+}
+.btn-1:hover{
+background: #ED1C2F;
+    color: white;
+    cursor: pointer;
+
+}
+
+.btn-2{
+border: 2px solid #ED1C2F;
+    width: 170px;
+    height: 50px;
+    position: absolute;
+    top: 400px;
+    left: 620px;
+    font-size:25px;
+    padding-left: 50px;
+    padding-top: 10px;
+    background: #ED1C2F;
+     color: white;
+
+
+}
+.btn-2:hover{
+background:transparent;
+    color:  #ED1C2F;
+    cursor: pointer;
+
+}
+.menu-big{
+height: 300px;
+    background: red;
+    width: 100%;
+}
+.menu-cafe{
+  background: yellow;
+    height: 300px;
+ 
+}
