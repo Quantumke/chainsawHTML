@@ -13,7 +13,7 @@ include 'conn.php'
 <link rel="stylesheet" href="css/main.css">
 <script src="js/d3.js"></script>
 
-
+<script src="js/custom.js"></script>
 <link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.css">
 <link async rel="import" href="build1896.html?v=59"/>
 <script>var wrap=null;document.head.createShadowRoot||document.write("<script src='js/webcomponents.min.js'><\/script>"),function(e,t,a,n,c,s,o){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,s=t.createElement(a),o=t.getElementsByTagName(a)[0],s.async=1,s.src=n,o.parentNode.insertBefore(s,o)}(window,document,"script","../www.google-analytics.com/analytics.js","ga"),ga("create","UA-51484092-1","auto"),ga("require","displayfeatures"),ga("send","pageview");
@@ -25,19 +25,22 @@ include 'conn.php'
 
 <header id="page-header" class="hidden" data-title="Portfolio | Benson Mburu">
 <nav>
-<a href="index.html">
-<span>about</span></a>
-<a href="work.html"><span>work</span></a>
-<a href="labs.html"><span>labs</span></a>
- <a href="contact.html"><span>contact</span></a>
- </nav><div class="burger"><i></i> <i></i> <i></i></div>
+
+<a href="index.html"><span onclick="gohome()">about</span></a>
+<a href="work.html"><span onclick="goportofolio()">work</span></a>
+ <a href="labs.html"><span onclick="golabs">labs</span></a>
+ <a href="contact.html"><span onclick="gocontact">contact</span></a>
+
+ </nav>
+ <div class="burger"><i></i> <i></i> <i></i></div>
  </header>
  <main id="page-content">
  <section class="current">
  <div>
  <div class="page-control">
- <a href="labs.html" class="next"><span>Labs</span> <em></em></a>
- <a href="index.html" class="prev"><span>About</span> <em></em></a>
+ <a href="labs.php" class="next"><span>Labs</span> <em></em></a>
+ <a href="index.php" class="prev"><span onclick="gohome()">Home</span> <em></em></a>
+
  </div>
  <div class="content pages" id="work">
  <section class="centered">
