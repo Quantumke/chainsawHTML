@@ -252,4 +252,29 @@ circle {
   fill: none;
   stroke-width: 2.5px;
 }
+.style-4 input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+.style-4 input[type="text"]:focus,
+.style-4 input[type="text"].focus {
+  border-bottom: solid 2px #969696;
+}
+#myOverlay1 {
+                width:600px;
+                height:400px;
+            }
+  #myOverlay4 {
+                width:600px;
+                height:400px;
+            }
+            #myOverlay2 {
+                width:50%;
+                height:50%;
+            }
+            #myOverlay3 {
+
+            }
 
