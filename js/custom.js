@@ -23,3 +23,10 @@ function gocontact()
 
 		window.location.href="contact.php";
 	}
+function contact()
+	{
+
+		window.location.href="post.php";
+	}
+
+
