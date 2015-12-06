@@ -71,10 +71,10 @@
  <div class="status"></div>
 
  <div class="share"><p>You can also find me on</p>
- <awesome-button width="130" type="facebook" target="_blank" href="https://www.facebook.com/r.caferati">Facebook</awesome-button>
+ <awesome-button type="github" width="120" target="_blank" href="https://github.com/rcaferati">Github</awesome-button></div>
  <awesome-button type="linkedin" width="130" target="_blank" href="https://www.linkedin.com/in/rcaferati">Linkedin</awesome-button>
  <awesome-button type="twitter" width="120" target="_blank" href="https://twitter.com/rcaferati">Twitter</awesome-button>
- <awesome-button type="github" width="120" target="_blank" href="https://github.com/rcaferati">Github</awesome-button></div>
+
 
  </div></div></section></div></div>
 
