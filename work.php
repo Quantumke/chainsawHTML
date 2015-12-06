@@ -26,10 +26,10 @@ include 'conn.php'
 <header id="page-header" class="hidden" data-title="Portfolio | Benson Mburu">
 <nav>
 
-<a href="index.html"><span onclick="gohome()">about</span></a>
-<a href="work.html"><span onclick="goportofolio()">work</span></a>
- <a href="labs.html"><span onclick="golabs">labs</span></a>
- <a href="contact.html"><span onclick="gocontact">contact</span></a>
+<a href="index.php"><span onclick="gohome()">about</span></a>
+<a href="work.php"><span onclick="goportofolio()">work</span></a>
+ <a href="labs.php"><span onclick="golabs">labs</span></a>
+ <a href="contact.php"><span onclick="gocontact">contact</span></a>
 
  </nav>
  <div class="burger"><i></i> <i></i> <i></i></div>
@@ -57,9 +57,11 @@ include 'conn.php'
  <li title="Filter by Java"><span>Java</span>
  </li><li title="Filter by Django"><span>Django</span>
  </li><li title="Filter by Ruby"> <span>Ruby</span>
- </li><li title="Filter by Laravel"><span>Laravel</span>
-     </li>
- <small>Click On a Tab To Sort By Technology .</small>
+ </li><li title="Filter by Laravel"><span>Laravel</span> </li>
+<li title ="Filter by php"><span>Php</span></li>
+<li title="FIlter by python"><span>Python</span></li>
+<li title="FIlter by meteor"><span>Meteor</span></li>
+ <small>Click On a Tab To Sort By Technology .</small></li>
  </div>
  </header>
 
@@ -75,26 +77,35 @@ if ($result->num_rows > 0) {
    ?>
 
  <ul class="grid-list cf_">
+<script>
 
- <li class="item l_">
+     function viewmore()
+	{
+
+		window.location.href="more.php?id=<?php echo $row["id"] ?>";
+	}
+
+
+     </script>
+ <li class="item l_" onclick="viewmore()">
  <h2><?php echo $row["title"] ?></h2>
- <a href="#" class="screen">
+ <a href="" onclick="viewmore()" class="screen">
  <span data-text="<?php echo $row["title"] ?>">
  <i></i> <i></i> <i></i>
  </span>
- <div class="thumb" style="background-image:url(img/<?php echo $row["img"] ?>)">
+ <div class="thumb" style="background-image:url(admin/../img/<?php echo $row["img"] ?>)">
  <div class="tags">
  <div>
  <ul>
      <li><?php echo $row["technology"]?></li>
+     <br>
  <i class="fa fa-github"></i>
- <
  </ul>
  </div></div>
 
- <div style="background-image:url(img/<?php echo $row["img"] ?>)" class="imgs"></div></div>
+ <div style="background-image:url(admin/../img/<?php echo $row["img"] ?>)" class="imgs"></div></div>
 
- <em class="fwa hidden">FWA Winner</em></a></li>
+ <em class="fwa hidden">Best Practices</em></a></li>
  <?php
  }
 } else {
