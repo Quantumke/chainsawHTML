@@ -13,11 +13,6 @@
 <link async rel="import" href="build1896.html?v=59"/>
 <script>var wrap=null;document.head.createShadowRoot||document.write("<script src='js/webcomponents.min.js'><\/script>"),function(e,t,a,n,c,s,o){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,s=t.createElement(a),o=t.getElementsByTagName(a)[0],s.async=1,s.src=n,o.parentNode.insertBefore(s,o)}(window,document,"script","../www.google-analytics.com/analytics.js","ga"),ga("create","UA-51484092-1","auto"),ga("require","displayfeatures"),ga("send","pageview");</script>
 <script src="js/custom.js"></script>
-<script src="//www.powr.io/powr.js" powr-token="c747eb50e5" external-type="html"></script>
-<script src="dist/sweetalert-dev.js"></script>
-<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
- <link rel="stylesheet" href="dist/example.css">
 </head>
 <body class="page-exit animating">
 <header id="page-header" class="hidden" data-title="Message| Benson Mburu">
@@ -45,58 +40,48 @@
  <h1>Contact Me</h1>
 
  </header>
-   <?php
-	  /******************** ERROR MESSAGES*************************************************
-	  This code is to show error messages
-	  **************************************************************************/
-      if (isset($_GET['msg'])) {
-	  $msg =$_GET['msg'];// mysql_real_escape_string($_GET['msg']);
-	  echo "<div><p>SUCCESFUL</p></div>
-
-      ";
-	  }
-	  /******************************* END ********************************/
-			?>
 
  <div class="lets-talk">
 
-<form id="myForm" method="post" action="post.php">
  <ul class="input-block">
-
+<form id="myForm" action="post.php" method="post" enctype="multipart/form-data">
  <li class="active name">
  <div class="label cf_">
 
  <i class="i-svg user" data-icon="user,"></i>
  <label title="Name">Fill in your name</label></div>
  <i class="i-svg common" data-icon="user,"></i>
-  <textarea placeholder="Enter Your name" name="name"></textarea>
+
+   <textarea placeholder="NAME" name="name"></textarea>
  </li>
  <li class="email"><div class="label cf_"><i class="i-svg mail" data-icon="envelope,"></i><label title="email">Please enter your email address</label></div>
  <i class="i-svg common" data-icon="envelope,"></i>
-  <textarea placeholder="Enter your Email" name="email"></textarea>
-
+  <textarea placeholder="EMAIL" name="email"></textarea>
  <li class="msg">
  <div class="label cf_">
  <i class="i-svg msg" data-icon="edit,"></i>
  <label title="message">Please Write Your Message</label></div>
  <i class="i-svg common" data-icon="edit,"></i>
- <textarea placeholder="message" name="message"></textarea>
-     </li></ul>
-  </form>
+ <textarea placeholder="MESSAGE" name="message"></textarea>
+ </li>
 
+
+ </ul></form>
  <div class="submit"><awesome-button color="teal" width="100" disabled="true">Next</awesome-button>
- <awesome-button  onclick="myFunction()" color="teal" disabled="true" progress="true">Submit your message</awesome-button></div>
- <input type="button" value="Submit form">
+ <awesome-button onclick="myFunction()" color="teal" disabled="true" progress="true">Submit your message</awesome-button></div>
 
 
-
- <div class="status"></div>
-
+<script>
+function myFunction() {
+    document.getElementById("myForm").submit();
+}
+</script>
+<div class="status"></div>
  <div class="share"><p>You can also find me on</p>
- <awesome-button width="130" type="facebook" target="_blank" href="https://www.facebook.com/r.caferati">Facebook</awesome-button>
+ <awesome-button type="github" width="120" target="_blank" href="https://github.com/rcaferati">Github</awesome-button>
  <awesome-button type="linkedin" width="130" target="_blank" href="https://www.linkedin.com/in/rcaferati">Linkedin</awesome-button>
- <awesome-button type="twitter" width="120" target="_blank" href="https://twitter.com/rcaferati">Twitter</awesome-button>
- <awesome-button type="github" width="120" target="_blank" href="https://github.com/rcaferati">Github</awesome-button></div>
+ <awesome-button type="twitter" width="120" target="_blank" href="https://twitter.com/rcaferati">Twitter</awesome-button></div>
+
 
  </div></div></section></div></div>
 
@@ -105,7 +90,6 @@
  <div class="avatar">
  <div class="avatar-wrapper">
  </div></div></div>
-
  <script async data-require="false" data-main="https://caferati-two-caferati.netdna-ssl.com/scripts/build-59" src="js/require.js"></script>
  <script>var SRT={};SRT.o=Date.now(),SRT.a=setTimeout(function(){SRT.r=document.getElementById("page-loader"),SRT.r=SRT.r.querySelectorAll(".avatar"),SRT.r[0].classList.add("active")},1e3),SRT.f=setTimeout(function(){SRT.s=Date.now(),SRT.d=900,SRT.r[0].classList.add("first")},1900),SRT.s=setTimeout(function(){SRT.s=Date.now(),SRT.d=1350,SRT.r[0].classList.contains("first")&&SRT.r[0].classList.add("second")},3250),SRT.t=setTimeout(function(){SRT.s=Date.now(),SRT.d=1350,SRT.r[0].classList.contains("second")&&SRT.r[0].classList.add("third")},4550);var DATA={scripts:[""],partials:["control"],filter:{list:[]},prev:{},next:{},template:"contact",index:4,name:"contact"};</script></body>
 
