@@ -45,10 +45,10 @@ jQuery(document).ready(function ($) {
 
 <header id="page-header" class="hidden" data-title="Benson Mburu  | Full Stack  Developer">
 <nav>
-<a href="index.html"><span onclick="gohome()">about</span></a>
-<a href="work.html"><span onclick="goportofolio()">work</span></a>
- <a href="labs.html"><span onclick="golabs">labs</span></a>
- <a href="contact.html"><span onclick="gocontact">contact</span></a>
+<a href="index.php"><span onclick="gohome()">about</span></a>
+<a href="work.php"><span onclick="goportofolio()">work</span></a>
+ <a href="labs.php"><span onclick="golabs">labs</span></a>
+ <a href="contact.php"><span onclick="gocontact">contact</span></a>
 <
  </nav>
  <div class="burger"><i></i> <i></i> <i></i></div></header>
@@ -56,24 +56,24 @@ jQuery(document).ready(function ($) {
  <section class="current">
  <div>
  <div class="page-control">
- <a href="work.html" onclick="goportofolio()" class="next"><span>Portfolio</span>
+ <a href="work.php" onclick="goportofolio()" class="next"><span>Portfolio</span>
 
  <em></em></a></div><div class="content" id="about"><div class="info" itemscope itemtype="http://data-vocabulary.org/Person"><h1><span>Hello, my name is</span>&nbsp;<strong itemprop="name">Benson Mburu </strong>
  <span>.</span></h1>
 
- <p itemprop="title">I am a Front End Developer , Android and PHP Developer</p>
+ <p itemprop="title">I am a PHP Developer</p>
  <p>
 
 
- <span>I have a enomourse basket of apps, You can take a look at my </span>&nbsp;<a href="work.html" itemprop="url">Portfolio</a>
+ <span>I have a enomourse basket of apps, You can take a look at my </span>&nbsp;<a href="work.php" itemprop="url">Portfolio</a>
  <span>
  </p>
  <p>
-  <span>Caring is sharing, I do open source development</span>&nbsp;<a href="labs.html">Visit My Lab</a><span>.
+  <span>Caring is sharing, I do open source development</span>&nbsp;<a href="labs.php">Visit My Lab</a><span>.
  </span>
 
  </span><br>
-  <span>Please Dont hesitate to drop me a line anytime, </span>&nbsp;<a href="labs.html">Contact Me</a><span>.
+  <span>Please Dont hesitate to drop me a line anytime, </span>&nbsp;<a href="contact.php" >Contact Me</a> <span>.
 
  </p>
  </div>
@@ -98,7 +98,7 @@ jQuery(document).ready(function ($) {
 
  <script async data-require="false" data-main="https://caferati-two-caferati.netdna-ssl.com/scripts/build-59" src="js/require.js"></script>
 
- // <script>var SRT={};SRT.o=Date.now(),SRT.a=setTimeout(function(){SRT.r=document.getElementById("page-loader"),SRT.r=SRT.r.querySelectorAll(".avatar"),SRT.r[0].classList.add("active")},1e3),SRT.f=setTimeout(function(){SRT.s=Date.now(),SRT.d=6000,SRT.r[0].classList.add("first")},6000),SRT.s=setTimeout(function(){SRT.s=Date.now(),SRT.d=1350,SRT.r[0].classList.contains("first")&&SRT.r[0].classList.add("second")},3250),SRT.t=setTimeout(function(){SRT.s=Date.now(),SRT.d=1350,SRT.r[0].classList.contains("second")&&SRT.r[0].classList.add("third")},4550);var DATA={scripts:[""],partials:["control"],filter:{list:[]},prev:{},next:{},template:"about",index:1,name:"about"};</script>
+ // <script>var SRT={};SRT.o=Date.now(),SRT.a=setTimeout(function(){SRT.r=document.getElementById("page-loader"),SRT.r=SRT.r.querySelectorAll(".avatar"),SRT.r[0].classList.add("active")},1e3),SRT.f=setTimeout(function(){SRT.s=Date.now(),SRT.d=6500,SRT.r[0].classList.add("first")},6500),SRT.s=setTimeout(function(){SRT.s=Date.now(),SRT.d=1350,SRT.r[0].classList.contains("first")&&SRT.r[0].classList.add("second")},3250),SRT.t=setTimeout(function(){SRT.s=Date.now(),SRT.d=1350,SRT.r[0].classList.contains("second")&&SRT.r[0].classList.add("third")},4550);var DATA={scripts:[""],partials:["control"],filter:{list:[]},prev:{},next:{},template:"about",index:1,name:"about"};</script>
   <i class="fa fa-facebook"></i>
  </body>
 
