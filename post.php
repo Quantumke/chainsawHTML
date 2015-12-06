@@ -46,8 +46,18 @@ else
 
 
 	if($result) {
-			$msg = urlencode("Succesfully sent. ");
-			header("Location:contact.php?msg=$msg");
+		$to      = '$email';
+$subject = 'Contact Made';
+$message = 'I have recieved your email i will contact you soonest';
+$headers = 'From: bensoh.mburu@gmail.com' . "\r\n" .
+    'Reply-To: webmaster@example.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+mail($to, $subject, $message, $headers);
+
+			$msg = urlencode("An unexpected error occured. ");
+			header("Location:contact.php?msg2=$msg1");
+
 			}
 
 else{
